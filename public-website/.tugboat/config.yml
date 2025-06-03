@@ -1,0 +1,11 @@
+services:
+  nodejs:
+    image: tugboatqa/node
+    expose: 3000
+    commands:
+      init:
+        - yarn install
+      update:
+        - yarn update
+      build:
+        - yarn build
