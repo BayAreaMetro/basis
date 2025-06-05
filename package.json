@@ -1,0 +1,13 @@
+{
+  "name": "@bayareametro/basis",
+  "private": true,
+  "scripts": {
+    "preinstall": "echo \"Don't install things here, the NextJS app is inside ./public-website\" && exit 1",
+    "precommit": "cd public-website && bun run precommit",
+    "prepare": "husky"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "husky": "^9.1.7"
+  }
+}

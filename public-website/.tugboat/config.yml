@@ -4,8 +4,7 @@ services:
     expose: 3000
     commands:
       init:
-        - yarn install
-      update:
-        - yarn update
+        - curl -fsSL https://bun.sh/install | bash
       build:
-        - yarn build
+        - bun i
+        - bun run build
