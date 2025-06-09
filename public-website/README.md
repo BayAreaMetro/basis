@@ -3,8 +3,9 @@ This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-
 ## Getting Started
 
 1. Ensure you're authenticated with NPM, and have at least "read" access to the `@bayareametro` NPM organization's packages
-2. Install dependencies (preferably with `bun`)
-3. Run the development server: `bun dev`
+2. Create a `.env` file from the `.env.template` file, and complete the values within the `.env` file.
+3. Install dependencies (preferably with `bun`)
+4. Run the development server: `bun dev`
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
