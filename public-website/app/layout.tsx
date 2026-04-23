@@ -6,6 +6,8 @@ import "@fontsource/nunito-sans/700.css";
 import "@fontsource/nunito-sans/800.css";
 import "@fontsource/nunito";
 import "@fontsource/nunito/300.css";
+import "./fontawesome";
+import styles from "./layout.module.css";
 
 import type { Metadata } from "next";
 
@@ -21,7 +23,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body className={styles.body}>{children}</body>
     </html>
   );
 }

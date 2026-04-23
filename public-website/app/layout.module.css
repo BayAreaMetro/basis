@@ -1,0 +1,4 @@
+.body {
+    --utility-header-height: 80px;
+    --dv-body-bg: var(--dv-midnight-blue-10);
+}

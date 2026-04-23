@@ -1,0 +1,24 @@
+.root {
+    --dv-card-border-color: var(--dv-midnight-blue);
+    --dv-card-border-radius: 4px;
+    --dv-card-bg: var(--dv-white);
+}
+
+.image {
+    height: auto;
+}
+
+.body {
+    gap: 16px;
+}
+
+.textContent {
+    flex: 1;
+    gap: 12px;
+}
+
+.ctaContainer {
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+}

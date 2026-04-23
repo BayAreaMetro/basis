@@ -1,0 +1,108 @@
+@use "@bayareametro/mtc-ui/config.bootstrap.scss" as *;
+
+.standardHeaderRoot {
+  --xs-top-content-height: 72px;
+
+  grid-column: 1 / -1;
+  grid-row: 1;
+  position: sticky;
+  top: var(--ribbon-height);
+  z-index: $zindex-dropdown + 2;
+}
+
+.headerLogo {
+  margin-right: 16px;
+}
+
+.headerTitleLink {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+  text-decoration: none;
+}
+
+.headerTitle {
+  font-weight: 300;
+  font-size: 24px !important;
+  line-height: 32px !important;
+}
+
+.topContent {
+  height: var(--xs-top-content-height);
+  padding-left: var(--page-padding);
+  padding-right: var(--page-padding);
+  background-color: var(--dv-white);
+}
+
+.standardHeaderNavigation {
+  padding-top: 24px;
+  background-color: var(--dv-white) !important;
+
+  @include media-breakpoint-down(md) {
+    max-height: calc(100vh - (var(--xs-top-content-height) + var(--ribbon-height)));
+    overflow: auto;
+  }
+}
+
+.rightContent {
+  flex: 1;
+  justify-content: flex-end;
+  height: 100%;
+}
+
+.rightContentNavbar {
+  --dv-navbar-color: var(--dv-white);
+  --dv-navbar-hover-color: var(--dv-mtc-gold);
+  --dv-navbar-padding-y: 0;
+}
+
+.rightContentNavbarCollapse {
+  height: 100%;
+}
+
+.rightContentNav {
+  --dv-nav-pills-link-active-bg: var(--dv-mtc-gold);
+  --dv-nav-pills-link-active-color: var(--dv-midnight-blue);
+  --dv-nav-pills-border-radius: 0;
+
+  gap: 16px;
+  height: 100%;
+}
+
+.rightContentNavLink {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.utilityHeaderRoot {
+  grid-column: 2;
+  grid-row: 1;
+
+  position: sticky;
+  top: 0;
+  height: var(--utility-header-height);
+
+  z-index: $zindex-dropdown + 2;
+}
+
+.input {
+  padding: 16px 4px;
+}
+
+.collapsibleSearchPanel {
+  background-color: var(--dv-medium-blue);
+}
+
+.collapsibleSearchPanelSearchField {
+  padding: 8px;
+}
+
+.utilityHeaderContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: var(--max-content-width);
+  height: 100%;
+}
