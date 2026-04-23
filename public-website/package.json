@@ -6,7 +6,7 @@
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint",
+    "lint": "eslint .",
     "typecheck": "tsc --noEmit",
     "preinstall": "npx only-allow bun",
     "precommit": "bun lint && bun typecheck"
@@ -14,21 +14,24 @@
   "dependencies": {
     "@bayareametro/mtc-ui": "latest",
     "@fortawesome/pro-light-svg-icons": "^6.7.2",
-    "next": "15.3.3",
-    "react": "^19.1.0",
-    "react-dom": "^19.1.0",
+    "next": "16.2.4",
+    "react": "19.2.5",
+    "react-dom": "19.2.5",
     "sass": "^1.89.1"
   },
   "devDependencies": {
-    "@eslint/eslintrc": "^3.3.1",
     "@types/node": "^20.19.0",
-    "@types/react": "^19.1.6",
-    "@types/react-dom": "^19.1.6",
+    "@types/react": "19.2.14",
+    "@types/react-dom": "19.2.3",
     "eslint": "^9.28.0",
-    "eslint-config-next": "15.3.3",
+    "eslint-config-next": "16.2.4",
     "eslint-config-prettier": "^10.1.5",
     "eslint-plugin-prettier": "^5.4.1",
     "prettier": "^3.5.3",
     "typescript": "^5.8.3"
+  },
+  "overrides": {
+    "@types/react": "19.2.14",
+    "@types/react-dom": "19.2.3"
   }
 }

@@ -1,3 +1,5 @@
+"use client";
+
 import { Button, HStack, Link, StandardHeader, UtilityHeader, VStack } from "@bayareametro/mtc-ui";
 import BootstrapNavbar from "react-bootstrap/Navbar";
 import BootstrapNavbarCollapse from "react-bootstrap/NavbarCollapse";
